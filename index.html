@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venus Lynx - Professional Numerology, Astrology, Lalkitab, and Vastu Consultation services by Priyanka. Guiding you through cosmic alignment and energetic harmony.">
+    <meta name="keywords" content="numerology, astrology, lalkitab, vastu, consultation, priyanka, spiritual guidance">
+    <title>Venus Lynx - Cosmic Alignment & Energetic Harmony</title>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Venus Lynx",
+      "description": "Professional Numerology, Astrology, Lalkitab, and Vastu Consultation",
+      "founder": {
+        "@type": "Person",
+        "name": "Priyanka"
+      },
+      "telephone": "+91-9557390210",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      },
+      "priceRange": "$$",
+      "areaServed": "Worldwide"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --pastel-green: #D7EDAA;
+            --olive-green: #5C7A3F;
+            --dark-green: #3C5F2A;
+            --white: #FFFFFF;
+            --off-white: #F9F9F9;
+            --text-dark: #2C2C2C;
+            --text-light: #666666;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: var(--dark-green);
+            line-height: 1.3;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        nav.scrolled {
+            box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--dark-green);
+            font-family: 'Georgia', serif;
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 35px;
+        }
+        
+        .logo-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: var(--olive-green);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--olive-green);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+        
+        .mobile-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--dark-green);
+            transition: all 0.3s ease;
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            min-height: 90vh;
+            background: linear-gradient(135deg, rgba(215, 237, 170, 0.3), rgba(92, 122, 63, 0.1));
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80%;
+            height: 150%;
+            background: linear-gradient(135deg, var(--pastel-green), transparent);
+            border-radius: 50%;
+            opacity: 0.3;
+            z-index: 0;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--olive-green), transparent);
+            border-radius: 50%;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero .tagline {
+            font-size: 1.5rem;
+            color: var(--olive-green);
+            margin-bottom: 2rem;
+            font-style: italic;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, var(--olive-green), var(--dark-green));
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(92, 122, 63, 0.3);
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(92, 122, 63, 0.4);
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .section-header {
+            position: relative;
+            padding-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .section-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--pastel-green), var(--olive-green), var(--pastel-green));
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* About Section */
+        #about {
+            background: var(--off-white);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-image {
+            width: 100%;
+            height: 400px;
+            background: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .about-text h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--pastel-green);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--pastel-green), var(--olive-green));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(92, 122, 63, 0.15);
+        }
+        
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--pastel-green), var(--olive-green));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark-green);
+        }
+        
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        
+        /* Service Detail Sections */
+        .service-detail {
+            background: white;
+        }
+        
+        .service-detail:nth-child(even) {
+            background: var(--off-white);
+        }
+        
+        .detail-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .detail-intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .detail-section {
+            margin-bottom: 2.5rem;
+        }
+        
+        .detail-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--olive-green);
+        }
+        
+        .detail-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .detail-list li {
+            padding: 0.8rem 0 0.8rem 2.5rem;
+            position: relative;
+            line-height: 1.7;
+            color: var(--text-dark);
+        }
+        
+        .detail-list li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            color: var(--olive-green);
+            font-size: 1.2rem;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .benefit-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--olive-green);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .benefit-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark-green);
+        }
+        
+        /* Testimonials */
+        .testimonials-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-size: 5rem;
+            color: var(--pastel-green);
+            font-family: 'Georgia', serif;
+            opacity: 0.5;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--olive-green);
+        }
+        
+        .testimonial-role {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        /* Contact Form */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, var(--pastel-green), var(--olive-green));
+            padding: 3rem;
+            border-radius: 20px;
+            color: white;
+        }
+        
+        .contact-info h3 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-details a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--dark-green);
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid var(--pastel-green);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            font-family: inherit;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--olive-green);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .submit-button {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, var(--olive-green), var(--dark-green));
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(92, 122, 63, 0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(90deg, var(--pastel-green), rgba(215, 237, 170, 0.5));
+            padding: 2rem;
+            position: relative;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer-logo {
+            width: 80px;
+            height: 55px;
+        }
+        
+        .footer-logo svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .footer-info {
+            text-align: right;
+        }
+        
+        .footer-info p {
+            color: var(--dark-green);
+            margin: 0.3rem 0;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            color: var(--olive-green);
+            font-size: 0.9rem;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                flex-direction: column;
+                background: white;
+                width: 100%;
+                padding: 2rem;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                transition: left 0.3s ease;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .mobile-toggle {
+                display: flex;
+            }
+            
+            .mobile-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            
+            .mobile-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .mobile-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1.2rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 2rem;
+                text-align: center;
+            }
+            
+            .footer-info {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+                        <ellipse cx="300" cy="200" rx="280" ry="180" fill="#CDE662" />
+                        <text x="300" y="180" text-anchor="middle" font-family="Brush Script MT, Lucida Calligraphy, cursive" font-size="150" fill="#1B4F1B">VL</text>
+                        <text x="300" y="260" text-anchor="middle" font-family="Brush Script MT, Lucida Calligraphy, cursive" font-size="48" fill="#1B4F1B">Venus Lynx</text>
+                    </svg>
+                </div>
+                <span>Venus Lynx</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#numerology">Numerology</a></li>
+                <li><a href="#astrology">Astrology</a></li>
+                <li><a href="#lalkitab">Lalkitab</a></li>
+                <li><a href="#vastu">Vastu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div style="width: 200px; height: 140px; margin: 0 auto 2rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" style="width: 100%; height: 100%;">
+                    <ellipse cx="300" cy="200" rx="280" ry="180" fill="#CDE662" />
+                    <text x="300" y="180" text-anchor="middle" font-family="Brush Script MT, Lucida Calligraphy, cursive" font-size="150" fill="#1B4F1B">VL</text>
+                    <text x="300" y="260" text-anchor="middle" font-family="Brush Script MT, Lucida Calligraphy, cursive" font-size="48" fill="#1B4F1B">Venus Lynx</text>
+                </svg>
+            </div>
+            <h1>Venus Lynx</h1>
+            <p class="tagline">Guiding You Through Cosmic Alignment & Energetic Harmony</p>
+            <a href="#contact" class="cta-button">Book Consultation</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-header">
+            <h2 class="section-title">About Priyanka</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" style="width: 80%; height: auto;">
+                    <ellipse cx="300" cy="200" rx="280" ry="180" fill="#CDE662" />
+                    <text x="300" y="180" text-anchor="middle" font-family="Brush Script MT, Lucida Calligraphy, cursive" font-size="150" fill="#1B4F1B">VL</text>
+                    <text x="300" y="260" text-anchor="middle" font-family="Brush Script MT, Lucida Calligraphy, cursive" font-size="48" fill="#1B4F1B">Venus Lynx</text>
+                </svg>
+            </div>
+            <div class="about-text">
+                <h2>Your Guide to Clarity & Purpose</h2>
+                <p>Priyanka is a certified Numerologist, Astrologer, Lalkitab Specialist, and Vastu Consultant with over 8+ years of experience. Through Venus Lynx, she has guided hundreds of individuals toward clarity, healing, and purpose.</p>
+                <p>Her approach blends ancient wisdom with intuitive understanding to bring harmony into relationships, career, finances, health, and spiritual life. Each consultation is personalized, compassionate, and designed to empower you with actionable insights and practical remedies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services">
+        <div class="section-header">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive spiritual guidance tailored to your unique journey</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🔢</div>
+                <h3>Numerology</h3>
+                <p>Decode your life path, destiny numbers, and personal cycles to understand your true purpose and potential.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⭐</div>
+                <h3>Astrology</h3>
+                <p>Understand your birth chart, planetary impacts, and future possibilities through Vedic wisdom.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📖</div>
+                <h3>Lalkitab</h3>
+                <p>Powerful remedies based on karmic and planetary alignments to remove life's obstacles.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>Vastu</h3>
+                <p>Balance the energy of your home or workspace for prosperity, health, and peace.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Numerology Detail Section -->
+    <section id="numerology" class="service-detail">
+        <div class="section-header">
+            <h2 class="section-title">Numerology – Discover the Blueprint of Your Life</h2>
+        </div>
+        <div class="detail-content">
+            <p class="detail-intro">Numerology is the ancient science of numbers that reveals your life purpose, personality, strengths, weaknesses, and karmic patterns. Every number influences your emotional, mental, and spiritual world.</p>
+            
+            <div class="detail-section">
+                <h3>How Priyanka Helps</h3>
+                <ul class="detail-list">
+                    <li>Life Path Number analysis – understanding your soul's journey</li>
+                    <li>Destiny & Soul Urge interpretation – uncovering your true calling</li>
+                    <li>Name correction & signature energy alignment for success</li>
+                    <li>Personal year predictions – navigating the cycles of your life</li>
+                    <li>Relationship compatibility reading – harmonizing connections</li>
+                </ul>
+            </div>
+            
+            <div class="detail-section">
+                <h3>Benefits of Numerology</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <h4>Clarity in Decision Making</h4>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Improved Career Direction</h4>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Better Relationships</h4>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Emotional Healing</h4>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Alignment with True Purpose</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#contact" class="cta-button">Get Your Numerology Reading</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Astrology Detail Section -->
+    <section id="astrology" class="service-detail">
+        <div class="section-header">
+            <h2 class="section-title">Astrology – Understand the Planets Guiding Your Life</h2>
+        </div>
+        <div class="detail-content">
+            <p class="detail-intro">Astrology is a powerful tool to decode how celestial bodies influence your life. Your natal chart acts as a cosmic blueprint revealing your strengths, challenges, and destiny.</p>
+            
+            <div class="detail-section">
+                <h3>Astrological Services Offered</h3>
+                <ul class="detail-list">
+                    <li>Kundli (Birth Chart) Analysis – comprehensive life reading</li>
+                    <li>Marriage & Relationship Compatibility – finding harmonious partnerships</li>
+                    <li>Career, Finance & Business Guidance – achieving professional success</li>
+                    <li>Transit & Dasha Predictions – timing life events perfectly</li>
+                    <li>Remedies for planetary imbalances – harmonizing cosmic energies</li>
+                </ul>
+            </div>
+            
+            <div class="detail-section">
+                <h3>Why Choose Venus Lynx</h3>
+                <p>Priyanka blends classical Vedic Astrology with modern interpretations, offering clear, actionable guidance. Her readings are empathetic, accurate, and deeply transformative. She doesn't just predict the future—she empowers you to shape it with wisdom and conscious choices.</p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#contact" class="cta-button">Speak With an Astrologer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lalkitab Detail Section -->
+    <section id="lalkitab" class="service-detail">
+        <div class="section-header">
+            <h2 class="section-title">Lal Kitab – Simple Yet Powerful Remedies</h2>
+        </div>
+        <div class="detail-content">
+            <p class="detail-intro">Lalkitab is a unique astrological system known for its straightforward and highly effective remedies. It focuses on practical karmic balancing to remove blockages from your life.</p>
+            
+            <div class="detail-section">
+                <h3>What Lal Kitab Can Help With</h3>
+                <ul class="detail-list">
+                    <li>Financial blockages – attracting abundance and prosperity</li>
+                    <li>Marriage delays – removing obstacles to union</li>
+                    <li>Health concerns – balancing planetary health influences</li>
+                    <li>Career instability – creating professional stability</li>
+                    <li>Negative energies – clearing karmic debts</li>
+                    <li>Family disputes – restoring harmony at home</li>
+                </ul>
+            </div>
+            
+            <div class="detail-section">
+                <h3>Priyanka's Expertise</h3>
+                <p>She analyzes your planetary placement through the Lalkitab perspective and suggests remedies that are simple, cost-effective, and easy to follow—such as donations, routine adjustments, rituals, and lifestyle changes. These remedies work quickly and powerfully to shift your energy and circumstances.</p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#contact" class="cta-button">Get Your Lalkitab Remedies</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vastu Detail Section -->
+    <section id="vastu" class="service-detail">
+        <div class="section-header">
+            <h2 class="section-title">Vastu Shastra – Bring Harmony into Your Spaces</h2>
+        </div>
+        <div class="detail-content">
+            <p class="detail-intro">Vastu Shastra is the ancient Indian science of architecture that harmonizes your living and working spaces with natural energies.</p>
+            
+            <div class="detail-section">
+                <h3>Services Offered</h3>
+                <ul class="detail-list">
+                    <li>Home Vastu Analysis – optimizing residential energy flow</li>
+                    <li>Office & Commercial Vastu – enhancing business prosperity</li>
+                    <li>Plot selection & layout correction – choosing auspicious locations</li>
+                    <li>Energy balancing & directional alignment – correcting spatial imbalances</li>
+                    <li>Remedies without structural changes – practical solutions for existing spaces</li>
+                </ul>
+            </div>
+            
+            <div class="detail-section">
+                <h3>Why Vastu Matters</h3>
+                <p>A balanced environment enhances prosperity, peace, health, creativity, and relationships. The energy of your space directly impacts your well-being and success. Priyanka provides easy-to-implement remedies tailored to your home or workplace, ensuring that your environment supports rather than hinders your goals.</p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#contact" class="cta-button">Request Vastu Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="section-header">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Real transformations from real people</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p class="testimonial-text">Priyanka's numerology reading was incredibly accurate and insightful. She helped me understand my life path and make crucial career decisions with confidence. Within months, I landed my dream job. Her guidance was truly transformative!</p>
+                <p class="testimonial-author">Rahul Sharma</p>
+                <p class="testimonial-role">Business Professional, Mumbai</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">I was skeptical about Vastu, but Priyanka's consultation changed everything. The simple remedies she suggested for my home brought immediate positive changes. My family relationships improved, and we experienced unexpected financial gains. Thank you, Venus Lynx!</p>
+                <p class="testimonial-author">Meera Patel</p>
+                <p class="testimonial-role">Entrepreneur, Ahmedabad</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">After years of marriage delays, I consulted Priyanka for Lalkitab remedies. Her practical and affordable suggestions worked like magic. I'm now happily married! Her compassionate approach and deep knowledge made all the difference.</p>
+                <p class="testimonial-author">Anjali Verma</p>
+                <p class="testimonial-role">Software Engineer, Bangalore</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Begin your journey to cosmic alignment today</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-details">
+                        <strong>Phone</strong><br>
+                        <a href="tel:+919557390210">+91-9557390210</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🌍</div>
+                    <div class="contact-details">
+                        <strong>Location</strong><br>
+                        Serving clients worldwide
+                    </div>
+                </div>
+                <div style="margin-top: 3rem;">
+                    <div style="width: 120px; height: 80px; margin: 0 auto;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" style="width: 100%; height: 100%;">
+                            <ellipse cx="300" cy="200" rx="280" ry="180" fill="#CDE662" />
+                            <text x="300" y="180" text-anchor="middle" font-family="Brush Script MT, Lucida Calligraphy, cursive" font-size="150" fill="#1B4F1B">VL</text>
+                            <text x="300" y="260" text-anchor="middle" font-family="Brush Script MT, Lucida Calligraphy, cursive" font-size="48" fill="#1B4F1B">Venus Lynx</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <p style="font-size: 1.2rem; font-weight: 600; color: var(--dark-green);">Venus Lynx</p>
+                <p style="font-style: italic;">Guiding You Through Cosmic Alignment</p>
+            </div>
+            <div class="footer-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+                    <ellipse cx="300" cy="200" rx="280" ry="180" fill="#CDE662" />
+                    <text x="300" y="180" text-anchor="middle" font-family="Brush Script MT, Lucida Calligraphy, cursive" font-size="150" fill="#1B4F1B">VL</text>
+                    <text x="300" y="260" text-anchor="middle" font-family="Brush Script MT, Lucida Calligraphy, cursive" font-size="48" fill="#1B4F1B">Venus Lynx</text>
+                </svg>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Venus Lynx. All rights reserved. | Designed with cosmic energy ✨</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileToggle.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileToggle.classList.remove('active');
+            });
+        });
+        
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+        
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Create WhatsApp link
+            const whatsappMessage = `Hello, I would like to book a consultation.%0D%0A%0D%0AName: ${formData.name}%0D%0APhone: ${formData.phone}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
+            const whatsappLink = `https://wa.me/919557390210?text=${whatsappMessage}`;
+            
+            window.open(whatsappLink, '_blank');
+            
+            // Show success message
+            alert('Redirecting to WhatsApp to complete your consultation request.');
+            
+            // Reset form
+            e.target.reset();
+        });
+        
+        // Add active state to navigation based on scroll position
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollY = window.pageYOffset;
+            
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 100;
+                const sectionId = section.getAttribute('id');
+                const navLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+                
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-links a').forEach(link => {
+                        link.style.color = '';
+                    });
+                    if (navLink) {
+                        navLink.style.color = 'var(--olive-green)';
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
